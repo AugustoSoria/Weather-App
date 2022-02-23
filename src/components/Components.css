@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.lightGray {
+    color: #88869D
+}
+
+span.unit {
+    font-size: 2.5em;
+}
+
+/*                           Modal Component                          */
+
+.modal {
+    position: fixed;
+    top: 0;
+    background-color: #1E213A;
+    color: #E7E7EB;
+    padding: 1em 3em;
+    width: 20em;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-search {
+    display: flex;
+}
+
+.section-search div {
+    width: 12em;
+    height: 2.5em;
+}
+
+.section-search div:first-of-type {
+    border: 1px solid #E7E7EB;
+}
+
+.input-search {
+    width: 85%;
+    height: 3em;
+    background-color: transparent;
+    border: none;
+    color: #E7E7EB;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.modal div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
+
+.modal .btn-search {
+    height: 3em;
+    width: 5em;
+    background-color: #3C47E9;
+    color: #E7E7EB;
+    margin-left: 0.5em;
+}
+
+.modal .btn-close {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 290px;
+}
+
+.btn-close button {
+    background-color: #1E213A;
+    color: #cdcdf1;
+    font-size: 25px;
+}
+
+.locations-section{
+    width: 17em;
+    text-align: left;
+}
+
+.locations-section p {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.locations-section p:hover {
+    border: 1px solid #616475;
+}
+
+.locations-section .hidden {
+    color: #616475;
+    text-align: right;
+    padding-right: 1em;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 10px;
+}
+
+.locations-section p:hover .hidden {
+    display: inline;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.25);
+    width: 100vw;
+    height: 100vh;
+}
+
+/*                           TodayWeather Component                          */
+
+.TodayWeather {
+    background-color: #1E213A;
+    width: 20em;
+    height: 52em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.TodayWeather .search-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 20px;
+}
+
+.TodayWeather div:last-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-btn button{
+    color: #E7E7EB;
+    background-color: gray;
+    height: 35px;
+    border: none;
+}
+
+.currentUbication-btn {
+    width: 35px;
+    border-radius: 50px;
+}
+
+.TodayWeather img {
+    width: 185px;
+    margin: 0 auto;
+}
+
+.TodayWeather span.number {
+    font-weight: 700;
+    font-size: 95px;
+}
+
+/*                           DailyWeather Component                          */
+
+.DailyWeather {
+    display: flex; 
+    flex-direction: column;
+    width: 73%;
+}
+
+.DailyWeather .btn-scale {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.DailyWeather .btn-scale .active {
+    color: #2B2952;
+    background-color: #E7E7EB;
+}
+
+.DailyWeather .btn-scale button {
+    color: #E7E7EB;
+    background-color: #585676;
+    border: none;
+    border-radius: 50px;
+    font-size: larger;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.DailyWeather .cards {
+    display: flex;
+}
+
+.DailyWeather .cards  div {
+    width: 11.5em;
+    height: 11.5em;
+    background-color: #1E213A;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.cards .minTemp {
+    margin-left: 6px;
+}
+
+.DailyWeather p {
+    margin: 5px auto
+}
+
+.DailyWeather img {
+    width: 80px;
+}
+
+/*                           TodayHightlights Component                          */
+
+.TodayHightlights {
+    background-color: #100E1D;
+}
+
+.TodayHightlights h2 {
+    text-align: left;
+}
+
+.TodayHightlights span.number{
+    font-weight: 700;
+    font-size: 75px;
+}
+
+progress {
+    -webkit-appearance: none;
+    height: 10px;
+}
+
+.progressSection p {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 62%;
+    margin-left: 67px;
+}
+
+.percent-sign {
+    justify-content: flex-end !important;
+    width: 55% !important;
+    margin-top: 4px !important;
+}
+
+.progressSection span {
+    font-size: 12px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #E7E7EB;
+    border-radius: 7px;
+}
+
+::-webkit-progress-value {
+    background-color: #FFA500;
+    border-radius: 7px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 230px 175px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.grid-container div {
+    border-radius: 10px;
+    background-color: #1E213A;
+}
+
+/*                           RESPOSIVE                          */
+
+@media (max-width: 500px) {
+    .modal {
+        width: 25em;
+    }
+
+    .TodayWeather {
+        width: auto;
+        height: 46em
+    }
+
+    .DailyWeather {
+        flex-wrap: wrap;
+        width: auto;
+        margin: 3em auto;
+    }
+
+    .DailyWeather .btn-scale {
+        display: none;
+    }
+
+    .DailyWeather .cards {
+        margin: auto 18.7px;
+        flex-wrap: wrap;
+    }
+
+    .DailyWeather .cards div{
+        width: 9.3em;
+    }
+
+    .TodayHightlights {
+        width: 20em;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .TodayWeather, .DailyWeather {
+        width: auto;
+    }
+
+    .DailyWeather .cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 350px;
+        grid-template-rows: auto;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .TodayWeather {
+        width: 20em;
+        height: 67em;
+    }
+
+    .DailyWeather .cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: 300px 300px;
+        grid-template-rows: auto auto;
+    }
+}
